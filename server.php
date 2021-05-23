@@ -21,9 +21,7 @@ if ( isset($_GET['genere']) && $_GET['genere'] != "" ) {
     echo json_encode($filteredDatabase);
 
 } else {
-
     echo json_encode($database);
-
 }
 
 ?>
