@@ -27,6 +27,16 @@
 
             </header>
 
+            <div class="filtro-generi">
+                <select v-model="selectedGenre" @change="getCds">
+                    <option value="">Tutti</option>
+                    <option value="rock">Rock</option>
+                    <option value="pop">Pop</option>
+                    <option value="jazz">Jazz</option>
+                    <option value="metal">Metal</option>
+                </select>
+            </div>
+
             <!-- Cds Container -->
             <div class="cds-container">
 
